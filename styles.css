@@ -185,8 +185,8 @@ h2 {
 /* Interest Cards */
 .interests-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
@@ -289,12 +289,13 @@ h2 {
 }
 
 .players-grid-three {
-  grid-template-columns: 170px 1fr 170px;
+  grid-template-columns: 180px minmax(280px, 420px) 180px;
   align-items: center;
-  max-width: 900px;
+  justify-content: center;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .player-image-only {
@@ -305,10 +306,9 @@ h2 {
   box-shadow: 0 4px 20px var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
   aspect-ratio: 1;
-  max-width: 170px;
+  max-width: 180px;
   width: 100%;
-  justify-self: center;
-  margin: 0 auto;
+  min-width: 0;
 }
 
 .player-image-only:hover {
@@ -331,6 +331,7 @@ h2 {
   border: 1px solid var(--border);
   box-shadow: 0 4px 20px var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+  min-width: 0;
 }
 
 .player-card:hover {
@@ -403,6 +404,10 @@ h2 {
   }
 
   .players-grid-three {
+    grid-template-columns: 1fr;
+  }
+
+  .interests-grid {
     grid-template-columns: 1fr;
   }
 }
