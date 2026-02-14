@@ -6,16 +6,18 @@ A personal portfolio website built with vanilla HTML, CSS, and JavaScript for th
 
 - **Day/Night theme toggle** – Click the button in the top-right to switch themes
 - **Theme persistence** – Your preference is saved and respected on system dark mode
-- **Responsive design** – Works on desktop and mobile
+- **Basketball theme** – Subtle hoops-inspired accents (your favourite sport)
+- **Favourite Players page** – Dedicated page for your top players (linked from Interests)
 - **Sections:** About (name, age, degree), Interests (with photos)
 - **Smooth animations** – Cards reveal on scroll, hover effects
 
 ## Customisation
 
 1. **Your info:** Edit `index.html` – update the hero name, tagline, and the About cards with your name, age, and degree.
-2. **Interests:** Replace the interest titles and descriptions. To use your own photos:
+2. **Interests:** Replace the interest titles and descriptions. Basketball is included as an interest. To use your own photos:
    - Add images to the `images/` folder
    - Update the `src` in each interest card's `<img>` tag to point to your file (e.g. `images/coding.jpg`)
+3. **Favourite Players:** Edit `favourite-players.html` to add your favourite basketball players—names, positions, teams, and photos.
 
 ## Hosting on GitHub Pages
 

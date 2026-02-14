@@ -4,15 +4,15 @@
    ======================================== */
 
 :root {
-  /* Day mode (default) */
+  /* Day mode (default) - subtle basketball warmth */
   --bg-primary: #faf8f5;
-  --bg-secondary: #fffef9;
+  --bg-secondary: #fff9f5;
   --bg-card: #ffffff;
   --text-primary: #2d2a26;
   --text-secondary: #5c564d;
   --text-muted: #8a8379;
-  --accent: #e07c24;
-  --accent-soft: #f5d5b8;
+  --accent: #e85d04;
+  --accent-soft: #ffe5d9;
   --border: rgba(45, 42, 38, 0.08);
   --shadow: rgba(45, 42, 38, 0.06);
   --shadow-hover: rgba(45, 42, 38, 0.12);
@@ -28,7 +28,7 @@ body.night-mode {
   --text-primary: #e8e4df;
   --text-secondary: #b8b2a8;
   --text-muted: #7a756d;
-  --accent: #c9a86c;
+  --accent: #d4a052;
   --accent-soft: #2d2a3d;
   --border: rgba(232, 228, 223, 0.08);
   --shadow: rgba(0, 0, 0, 0.3);
@@ -343,6 +343,117 @@ h2 {
 .interest-content p {
   color: var(--text-secondary);
   font-size: 0.95rem;
+}
+
+/* Favourite Players Link */
+.favourite-players-section {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.favourite-players-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: var(--bg-card);
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.favourite-players-link:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px var(--shadow-hover);
+}
+
+.favourite-players-link .link-icon {
+  font-size: 1.25rem;
+}
+
+.favourite-players-link .link-arrow {
+  transition: transform 0.3s ease;
+}
+
+.favourite-players-link:hover .link-arrow {
+  transform: translateX(4px);
+}
+
+/* Back link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+/* Player cards */
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.player-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px var(--shadow-hover);
+}
+
+.player-image {
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.player-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-info {
+  padding: 1.25rem;
+}
+
+.player-info h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.player-info .position {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.player-info p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
 }
 
 /* Footer */
