@@ -289,12 +289,12 @@ h2 {
 }
 
 .players-grid-three {
-  grid-template-columns: 1fr 1.2fr 1fr;
-  align-items: stretch;
-  max-width: 950px;
+  grid-template-columns: 170px 1fr 170px;
+  align-items: center;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .player-image-only {
@@ -305,6 +305,10 @@ h2 {
   box-shadow: 0 4px 20px var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
   aspect-ratio: 1;
+  max-width: 170px;
+  width: 100%;
+  justify-self: center;
+  margin: 0 auto;
 }
 
 .player-image-only:hover {
