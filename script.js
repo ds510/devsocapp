@@ -57,7 +57,7 @@
     });
   }, observerOptions);
 
-  document.querySelectorAll('.about-card, .interest-card').forEach(el => {
+  document.querySelectorAll('.about-box, .interest-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';

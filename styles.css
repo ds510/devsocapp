@@ -102,7 +102,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 70vh;
+  min-height: 38vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -243,6 +243,8 @@ section {
 
 .about {
   background: var(--bg-secondary);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .interests {
@@ -269,39 +271,25 @@ h2 {
   font-size: 1rem;
 }
 
-/* About Cards */
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.about-card {
+/* About Box */
+.about-box {
   background: var(--bg-card);
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   border-radius: 16px;
   border: 1px solid var(--border);
   box-shadow: 0 4px 20px var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px var(--shadow-hover);
+.about-box h2 {
+  text-align: left;
+  margin-bottom: 0.75rem;
 }
 
-.about-card h3 {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
-}
-
-.about-card p {
-  color: var(--text-primary);
-  font-size: 1.1rem;
+.about-box p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
 }
 
 /* Interest Cards */
