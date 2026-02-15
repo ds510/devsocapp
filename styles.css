@@ -168,14 +168,14 @@ section {
 .balls-stack {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
 .ball-row {
   position: relative;
   width: 100%;
-  min-height: 80px;
+  min-height: 110px;
   display: flex;
   align-items: center;
 }

@@ -18,10 +18,10 @@
           panel.classList.remove('is-open');
           panel.setAttribute('hidden', '');
           btn.setAttribute('aria-expanded', 'false');
+        } else {
           document.body.classList.toggle('night-mode');
           document.body.classList.toggle('day-mode');
           localStorage.setItem('theme', document.body.classList.contains('night-mode') ? 'night' : 'day');
-        } else {
           btn.classList.add('rolled-right');
           panel.classList.add('is-open');
           panel.removeAttribute('hidden');
