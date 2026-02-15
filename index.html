@@ -4,71 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel's court</title>
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=6">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="court-page">
-    <!-- Basketball court background -->
-    <div class="court-bg"></div>
-    <div class="court-lines"></div>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg-suns"></div>
+    <div class="hero-overlay"></div>
+    <div class="floating-shapes">
+      <span class="shape shape-1"></span>
+      <span class="shape shape-2"></span>
+      <span class="shape shape-3"></span>
+      <span class="shape shape-4"></span>
+    </div>
+    <div class="hero-content">
+      <h1>Daniel Su</h1>
+      <p class="tagline">Actuarial Studies and Computer Science @ UNSW</p>
+    </div>
+  </header>
 
-    <!-- Top baseline: Talm bout me -->
-    <section class="court-about">
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
       <div class="about-box">
         <h2>talm bout me?</h2>
         <p>I'm studying Actuarial Studies and Computer Science at UNSW in my second year. Its been pretty cooked, but I'm still enjoying the journey.</p>
       </div>
-    </section>
-
-    <!-- Half court center: Suns logo + name + My Favourite Player button -->
-    <div class="court-center">
-      <div class="court-logo"></div>
-      <h1 class="court-name">Daniel Su</h1>
-      <p class="court-tagline">Actuarial Studies and Computer Science @ UNSW</p>
-      <a href="favourite-players.html" class="favourite-players-link court-cta">
-        <span>My Favourite Player</span>
-        <span class="link-arrow">→</span>
-      </a>
     </div>
+  </section>
 
-    <!-- Perimeter: Interests (like players around the court) -->
-    <article class="interest-card court-interest court-interest-1">
-      <div class="interest-content">
-        <h3>Eating and Food</h3>
-        <p>I like cooking, especially trying new recipes with friends. But I love the food the most, and eating it.</p>
+  <!-- Interests Section -->
+  <section class="interests" id="interests">
+    <div class="container">
+      <h2>Interests</h2>
+      <!-- <p class="section-subtitle"> interetsing things</p> -->
+      <div class="interests-grid">
+        <article class="interest-card">
+          <div class="interest-content">
+            <h3>Eating and Food</h3>
+            <p>I like cooking, especially trying new recipes with friends. But I love the food the most, and eating it.</p>
+          </div>
+        </article>
+        <article class="interest-card">
+          <div class="interest-content">
+            <h3>Poker</h3>
+            <p>A lot of my friends have been playing poker for ages, and I only recently have started playing. I just play friendly games with them.</p>
+          </div>
+        </article>
+        <article class="interest-card">
+          <div class="interest-content">
+            <h3>Running</h3>
+            <p>I've been running for about 2 months as of now, so far it's pretty fun. The main motivation for running is so that I can eat more yummy food</p>
+          </div>
+        </article>
+        <article class="interest-card">
+          <div class="interest-content">
+            <h3>Music</h3>
+            <p> I love music, both listening to and playing. I used to play the trumpet when I was younger, but quit. I really want to learn piano though. I like to listen 
+              various genres, my favourites being hardstyle, rap, rnb. 
+            </p>
+          </div>
+        </article>
+        <article class="interest-card">
+          <div class="interest-content">
+            <h3>Basketball</h3>
+            <p> This my favourite sport. I play volleyball as well sometimes, but basketball is too peak. I like playing pick up with my friends at local rec centres.</p>
+          </div>
+        </article>
       </div>
-    </article>
-    <article class="interest-card court-interest court-interest-2">
-      <div class="interest-content">
-        <h3>Poker</h3>
-        <p>A lot of my friends have been playing poker for ages, and I only recently have started playing. I just play friendly games with them.</p>
-      </div>
-    </article>
-    <article class="interest-card court-interest court-interest-3">
-      <div class="interest-content">
-        <h3>Running</h3>
-        <p>I've been running for about 2 months as of now, so far it's pretty fun. The main motivation for running is so that I can eat more yummy food</p>
-      </div>
-    </article>
-    <article class="interest-card court-interest court-interest-4">
-      <div class="interest-content">
-        <h3>Music</h3>
-        <p>I love music, both listening to and playing. I used to play the trumpet when I was younger, but quit. I really want to learn piano though. I like to listen to various genres, my favourites being hardstyle, rap, rnb.</p>
-      </div>
-    </article>
-    <article class="interest-card court-interest court-interest-5">
-      <div class="interest-content">
-        <h3>Basketball</h3>
-        <p>This my favourite sport. I play volleyball as well sometimes, but basketball is too peak. I like playing pick up with my friends at local rec centres.</p>
-      </div>
-    </article>
-  </main>
 
-  <footer class="footer court-footer">
-    <p>Cash dat green 💵💵</p>
+      <!-- Favourite Players Link -->
+      <div class="favourite-players-section">
+        <a href="favourite-players.html" class="favourite-players-link">
+          <span>My Favourite Player</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Cash dat green 💵💵</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
