@@ -313,6 +313,13 @@ section {
   margin: 0 auto;
 }
 
+.talm-bout-me .balls-hint {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 .about {
   background: var(--bg-secondary);
   padding-top: 2.5rem;
